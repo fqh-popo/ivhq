@@ -1,0 +1,20 @@
+---
+layout: default
+permalink: /destinations/
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Destinations</h1>
+
+  <ul class="destination-list">
+    {% for page in site.destinations %}
+      <li>
+        <h2>
+          <a class="destination-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title | escape }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>

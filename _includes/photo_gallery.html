@@ -1,0 +1,5 @@
+<div id="slides">
+{% for photo in page.photo_gallery %}
+    <img src="{{photo.url}}" alt='{{photo.alt | escape}}'>
+{% endfor %}
+</div>

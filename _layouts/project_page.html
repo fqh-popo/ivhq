@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<article class="project">
+
+  <header class="project-header">
+    <h1 class="project-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="project-content">
+    {{ content }}
+  </div>
+
+  <h2>Availability</h2>
+  <p>{{page.title}} projects are available in the following destinations:</p>
+  <div class="destination-list">
+    {% for destination in page.destinations %}
+    <a href="/destinations/volunteer-in-{{destination}}">{{destination | capitalize}}</a>
+    {% endfor %}
+  </div>
+
+  <h2>Projects</h2>
+  <div class="projects">
+    {% for proj in site.projects %}
+    <div class="project {{proj.project_name}}"><a href="{{proj.url}}">{{proj.title}}</a></div>
+    {% endfor %}
+  </div>
+
+</article>

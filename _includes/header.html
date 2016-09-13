@@ -1,0 +1,23 @@
+<header class="site-header" role="banner">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title | escape }}</a>
+
+    <nav class="site-nav">
+
+      <ul class="nav">
+        {% for page in site.pages %}
+        {% if page.title %}
+        <li><a href="{{page.url}}">{{page.title}}</a></li>
+        {% endif %}
+        {% endfor %}
+        <li><a href="/destinations/">Destinations</a></li>
+        <li><a href="/projects/">Projects</a></li>
+      </ul>
+
+    </nav>
+
+  </div>
+
+</header>

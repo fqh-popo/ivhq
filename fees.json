@@ -1,0 +1,60 @@
+[
+  {
+    "country": "thailand",
+    "display_name": "Thailand",
+    "weekly_spending_money_estimate": 50,
+    "extra_notes": null,
+    "additional_costs": "Visa, flights, travel insurance (mandatory), criminal background check, vaccinations, travel to Chiang Rai once in Thailand (we will show you the different options you have depending on your budget), transfer from Chiang Rai at conclusion of program, in-country trips and tours, souvenirs, spending money",
+    "fees": [
+      {
+        "weeks": 1,
+        "cost": 320
+      },
+      {
+        "weeks": 2,
+        "cost": 380
+      },
+      {
+        "weeks": 3,
+        "cost": 460
+      },
+      {
+        "weeks": 4,
+        "cost": 500
+      },
+      {
+        "weeks": 5,
+        "cost": 600
+      }
+    ]
+  },
+  {
+    "country": "argentina",
+    "display_name": "Argentina",
+    "weekly_spending_money_estimate": 80,
+    "extra_notes": "The Construction and Renovation project has an extra cost of US$35 per week for supervision, materials and the logistics involved in this project. This amount will be included in the Program Fee quoted to you by IVHQ when you apply.",
+    "additional_costs": "Visa, flights, travel insurance (mandatory), vaccinations, criminal background check, transfer back to airport at conclusion of program, souvenirs, spending money",
+    "fees": [
+      {
+        "weeks": 1,
+        "cost": 325
+      },
+      {
+        "weeks": 2,
+        "cost": 490
+      },
+      {
+        "weeks": 3,
+        "cost": 655
+      },
+      {
+        "weeks": 4,
+        "cost": 820
+      },
+      {
+        "weeks": 5,
+        "cost": 985
+      }
+    ]
+  }
+]
