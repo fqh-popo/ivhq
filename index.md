@@ -31,8 +31,37 @@ title: Welcome to IVHQ
 
 <!-- testimonial start -->
 <!-- ================ -->
-<section class="testimonial">
-{% include testimonial-vert.html testimonial=site.data.testimonials.bob %}
-{% include testimonial-vert.html testimonial=site.data.testimonials.sally %}
+<section class="testimonial text-center section-padding" >
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="arrow">TESTIMONIALS</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="testimonial-wrapper">
+				<div id="testimonialSlider">
+					<ul class="slides">
+						<li>
+							<div class="col-md-4">
+								{% include testimonial-vert.html testimonial=site.data.testimonials.bob %}
+							</div>							
+						</li>
+						<li>
+							<div class="col-md-4">
+								{% include testimonial-vert.html testimonial=site.data.testimonials.sally %}
+							</div>									
+						</li>
+						<li>
+							<div class="col-md-4">
+								{% include testimonial-vert.html testimonial=site.data.testimonials.andy %}
+							</div>									
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
+
 <!-- testimonial end -->

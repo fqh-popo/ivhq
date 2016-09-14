@@ -1,26 +1,29 @@
+<!-- footer start -->
+<!-- ================ -->
 <footer class="site-footer">
 
-  <div class="wrapper">
+  <div class="container">
+    <div class="row">
+      <h3 class="footer-heading">{{ site.title | escape }}</h3>
+      <div class="col-md-6">
+        <ul class="legals">
+          <li>
+            {% if site.author %}
+              {{ site.author | escape }}
+            {% else %}
+              {{ site.title | escape }}
+            {% endif %}
+            </li>
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        </ul>
+      </div>
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div>
-      <ul>
-        <li>
-          {% if site.author %}
-            {{ site.author | escape }}
-          {% else %}
-            {{ site.title | escape }}
-          {% endif %}
-          </li>
-        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-      </ul>
+      <div class="col-md-6 credit">
+        <p>{{ site.description | escape }}</p>
+      </div>
     </div>
-
-    <div>
-      <p>{{ site.description | escape }}</p>
-    </div>
-
   </div>
 
 </footer>
+<!-- footer end -->
+

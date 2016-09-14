@@ -12,6 +12,13 @@
   
   
 
+  <!--Bootstrap-->
+  <link type="text/css" rel="stylesheet" href="/assets/bootstrap.min.css">
+
+  <!--Flexslider-->
+  <link type="text/css" rel="stylesheet" href="/assets/flexslider.css">
+
+  <!--Main Style-->
   <link type="text/css" rel="stylesheet" href="/assets/main.css">
 
   <link rel="canonical" href="/">
@@ -27,19 +34,15 @@
 
   <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
   <script type="text/javascript" src="/assets/vendor/jquery.slides.min.js"></script>
+  <script type="text/javascript" src="/assets/vendor/bootstrap.min.js"></script>
 
-  <!--Bootstrap-->
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Web Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
 
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
   <link rel="shortcut icon" href="https://www.volunteerhq.org/sites/all/themes/ivhq/favicon.ico" type="image/vnd.microsoft.icon" />
-  
+
   <script>
     $(function(){
       $("#slides").slidesjs({
@@ -138,8 +141,20 @@
 
 <!-- testimonial start -->
 <!-- ================ -->
-<section class="testimonial">
-<img src="http://placehold.it/100/005AFF" /><br />
+<section class="testimonial text-center section-padding">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="arrow">TESTIMONIALS</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="testimonial-wrapper">
+				<div id="testimonialSlider">
+					<ul class="slides">
+						<li>
+							<div class="col-md-4">
+								<img src="https://www.volunteerhq.org/sites/default/files/meet-the-team-ben.jpg" /><br />
 <b>Bob Jobs</b>
 <p>Living and volunteering in the village has been one of the most rewarding
 experiences I have ever had. After just 4 short weeks, the place had truly
@@ -150,7 +165,11 @@ become my home, and the people my family.</p>
 <i>Age: 21</i><br />
 </p>
 
-<img src="http://placehold.it/100/FF530C" /><br />
+							</div>							
+						</li>
+						<li>
+							<div class="col-md-4">
+								<img src="https://www.volunteerhq.org/sites/default/files/meet-the-team-dan.jpg" /><br />
 <b>Sally Smith</b>
 <p>I'd do it again in a heartbeat. It's a perfect way to travel and just an
 experience unlike any other, it'll likely stay with you for the rest of
@@ -161,7 +180,29 @@ your life.</p>
 <i>Age: 54</i><br />
 </p>
 
+							</div>									
+						</li>
+						<li>
+							<div class="col-md-4">
+								<img src="https://www.volunteerhq.org/sites/default/files/meet-the-team-jono.jpg" /><br />
+<b>Andy Anderson</b>
+<p>Working with the locals to build a project that they so clearly needed was
+inspiring and life changing.</p>
+<p>
+<i>Programme: Construction - Argentina</i><br />
+<i>From: Canada</i><br />
+<i>Age: 25</i><br />
+</p>
+
+							</div>									
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
+
 <!-- testimonial end -->
 
   </div>
@@ -171,30 +212,33 @@ your life.</p>
       </div>
     </main>
 
-    <footer class="site-footer">
+    <!-- footer start -->
+<!-- ================ -->
+<footer class="site-footer">
 
-  <div class="wrapper">
+  <div class="container">
+    <div class="row">
+      <h3 class="footer-heading">IVHQ Interview</h3>
+      <div class="col-md-6">
+        <ul class="legals">
+          <li>
+            
+              IVHQ Interview
+            
+            </li>
+          <li><a href="mailto:robin@volunteerhq.org">robin@volunteerhq.org</a></li>
+        </ul>
+      </div>
 
-    <h2 class="footer-heading">IVHQ Interview</h2>
-
-    <div>
-      <ul>
-        <li>
-          
-            IVHQ Interview
-          
-          </li>
-        <li><a href="mailto:robin@volunteerhq.org">robin@volunteerhq.org</a></li>
-      </ul>
+      <div class="col-md-6 credit">
+        <p>A small, unstyled HTML site. Make it better!</p>
+      </div>
     </div>
-
-    <div>
-      <p>A small, unstyled HTML site. Make it better!</p>
-    </div>
-
   </div>
 
 </footer>
+<!-- footer end -->
+
 
   </body>
 
