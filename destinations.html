@@ -17,8 +17,7 @@ permalink: /destinations/
       <div class="col-md-12">
         <ul class="destination-list">
           {% for page in site.destinations %}
-          <li>
-            
+          <li>            
             <h2 class="countryName col-md-6">
               <img class="flag" src="{{ site.url }}/assets/images/{{ page.destination }}.png">
               <a class="destination-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title | escape }}</a>

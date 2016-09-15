@@ -563,6 +563,11 @@ nav ul li a:hover, nav ul li a:focus {
 .bannerTxt {
   padding-top: 8em; }
 
+/*---fees-----------------------------*/
+.helloReact {
+  font-size: 30px;
+  color: green; }
+
 /*---destinations --------------------*/
 .destinations ul {
   list-style: none;
