@@ -3,18 +3,30 @@ layout: default
 permalink: /destinations/
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Destinations</h1>
-
-  <ul class="destination-list">
-    {% for page in site.destinations %}
-      <li>
-        <h2>
-          <a class="destination-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-</div>
+<section class="destinations text-center">
+  <div class="row topimgBox">
+    <img class="topimg" src="{{ site.url }}/assets/images/topimg.jpg">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="arrow">Destinations</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="destination-list">
+          {% for page in site.destinations %}
+          <li>
+            
+            <h2 class="countryName col-md-6">
+              <img class="flag" src="{{ site.url }}/assets/images/{{ page.destination }}.png">
+              <a class="destination-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title | escape }}</a>
+            </h2>
+          </li>
+          {% endfor %}
+        </ul>      
+      </div>
+    </div>
+  </div>
+</section>
