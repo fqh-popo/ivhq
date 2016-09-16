@@ -3,51 +3,71 @@
 $.getJSON('../fees.json', function(data) {         
     console.log(data);
 
-	var Hello = React.createClass({displayName: "Hello",
+	var Fee = React.createClass({displayName: "Fee",
+		
 		render: function() {
-			return React.createElement("div", {className: "helloReact"}, "Hello ", this.props.name);
+			var current = this.props.list;
+			return (
+				React.createElement("div", {className: "col-md-4 text-left"}, 
+					React.createElement("h2", null, current.display_name), 
+					React.createElement("table", null, 
+						React.createElement("tbody", null, 
+						React.createElement("tr", null, 
+							React.createElement("th", null, "Duration"), 
+							React.createElement("th", null, "Cost")
+						), 
+						
+							current.fees.map((fee, index) =>
+								React.createElement("tr", {key: current.country+"week-"+fee.weeks}, 
+									React.createElement("td", {key: current.country+"week-"+fee.weeks+"duration"}, fee.weeks, " ", (index == 0)? "week" : "weeks"), 
+									React.createElement("td", {key: current.country+"week-"+fee.weeks+"cost"}, fee.cost)
+								)
+							)
+						
+						)
+					), 					
+					React.createElement("div", null), 
+					React.createElement("div", null)
+				)
+			);
+			
 		}
 	});
 
 	var Dropdown = React.createClass({displayName: "Dropdown",
 		render: function() {
 			return (
-			// 	{data.map( function(name, index) {
-			// 		return <li><a href="#" id="action" + { index + 1 }>{name.display_name}</a></li>;
-			// 	})}
 			React.createElement("div", {className: "dropdown"}, 
 				React.createElement("button", {className: "btn btn-default dropdown-toggle", type: "button", id: "dropdownMenu1", "data-toggle": "dropdown", "aria-haspopup": "true", "aria-expanded": "true"}, 
 					"Please select a country", 
 					React.createElement("span", {className: "caret"})
 				), 
 				React.createElement("ul", {className: "dropdown-menu", "aria-labelledby": "dropdownMenu1"}, 
-					data.map( country => React.createElement("li", {key: country.country}, React.createElement("a", {href: "#", key: country.country, id: country.country}, country.display_name)))
-				)		
+					
+						data.map( (country, index) => 
+						React.createElement("li", {key: country.country}, 
+							React.createElement("a", {href: "#", key: country.country, id: country.country, value: index}, country.display_name)
+						)
+					)
+				)
 			)
   			);
 		}
 	});
-					// <li><a href="#" id="action1">Action</a></li>
-					// <li><a href="#" id="action2">Another action</a></li>	
+
 	ReactDOM.render(
 		React.createElement(Dropdown, null),
 		document.getElementById('dropdown-menu')
 	);
 
-
-	$("#action1").click(function () {
+	$("li").on("click", "a", function (e) {
+		var index = $(e.target).attr("value");
 		ReactDOM.render(
-			React.createElement(Hello, {name: data[0].display_name}),
-			document.getElementById('reactTest')
+			React.createElement(Fee, {list: data[index]}),
+			document.getElementById('countryFee')
 		);
+		//console.table(data[index].fees);
 	});
-
-
-	$("#action2").click(function () {
-		ReactDOM.render(
-			React.createElement(Hello, {name: data[1].display_name}),
-			document.getElementById('reactTest')
-		);
-	});
+	
 });
 
