@@ -174,7 +174,7 @@ Global Styles
 ========================================================================== */
 a { color: #353535; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
 a:hover, a:focus { color: #3dc9b3; text-decoration: none; }
-p { color: #8c9398; word-spacing: 1px; line-height: 25px; font-size: 14px; }
+p { color: #7b7c7d; word-spacing: 1px; line-height: 25px; font-size: 14px; }
 h2 { font-size: 2em; color: #353535; text-transform: uppercase; font-weight: bold; }
 h2::after { content: " "; border: solid 2px #3dc9b3; display: block; width: 35px; margin: 25px auto; }
 .dark-bg { background: #f3f5f8; }
@@ -300,11 +300,22 @@ nav ul li a:hover, nav ul li a:focus { text-decoration: none; color: rgba(255, 2
 	padding-top: 8em;
 }
 /*---fees-----------------------------*/
-.helloReact {
-	font-size: 30px;
-	color: green;
-}
 #countryFee h2::after { content: " "; border: solid 2px #3dc9b3; display: block; width: 35px; margin: 25px 0; }
+#countryFee .flagBox {
+	margin-top: 25px;
+    margin-right: -30px;
+}
+
+@media screen and (min-width: 992px) {
+	#countryFee table {
+		width: 67%;
+	}	
+}
+
+#fees {
+	min-height: 756px;
+	margin-bottom: 30px;
+}
 /*---destinations --------------------*/
 .destinations ul {
 	list-style: none; list-style-image: none;

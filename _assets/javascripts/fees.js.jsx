@@ -8,26 +8,48 @@ $.getJSON('../fees.json', function(data) {
 		render: function() {
 			var current = this.props.list;
 			return (
-				<div className="col-md-4 text-left">
-					<h2>{current.display_name}</h2>
-					<table>
-						<tbody>
-						<tr>
-							<th>Duration</th>
-							<th>Cost</th>
-						</tr>
-						{
-							current.fees.map((fee, index) =>
-								<tr key={current.country+"week-"+fee.weeks}>
-									<td key={current.country+"week-"+fee.weeks+"duration"}>{fee.weeks} {(index == 0)? "week" : "weeks"}</td>
-									<td key={current.country+"week-"+fee.weeks+"cost"}>{fee.cost}</td>
-								</tr>
-							)
-						}
-						</tbody>
-					</table>					
-					<div></div>
-					<div></div>
+				<div className="col-md-12 text-left">
+					<div className="row">
+						<div className="flagBox col-md-1">
+							<img className="flag" src={"../assets/images/"+current.display_name+".png"} />
+						</div>
+						<h2 className="col-md-11">{current.display_name}</h2>
+					</div>
+					<div className="row">
+						<div className="col-md-2"></div>
+						<table className="table table-hover col-md-8">
+							<tbody>
+							<tr className="info">
+								<th>Duration</th>
+								<th>Cost</th>
+							</tr>
+							{
+								current.fees.map((fee, index) =>
+									<tr className="success" key={current.country+"week-"+fee.weeks}>
+										<td key={current.country+"week-"+fee.weeks+"duration"}>{fee.weeks} {(index == 0)? " week" : " weeks"}</td>
+										<td key={current.country+"week-"+fee.weeks+"cost"}>{fee.cost}</td>
+									</tr>
+								)
+							}
+							<tr className="info">
+								<td colSpan="2"><p><b>Weekly Spending:</b> &nbsp;&nbsp;$ { current.weekly_spending_money_estimate }</p></td>
+							</tr>
+							<tr className="info">
+								<td colSpan="2"><p><b>Please note:</b>&nbsp;&nbsp;{ current.extra_notes }</p></td>
+							</tr>
+							</tbody>
+						</table>
+						<div className="col-md-2"></div>
+					</div>
+					<div>
+						<h3>WHAT DO MY FEES PAY FOR?</h3>
+						<p>Registration Fee (refundable if you choose not to go*) – ongoing support from IVHQ staff, program marketing costs, information pack, administration costs, IVHQ Fund, travel costs to inspect programs and communication costs with volunteers.</p>
+						<p>Program Fee – airport pick-up, orientation, program supervision, accommodation and meals during volunteer program period, in-country 24/7 volunteer support and in-country administration costs.</p>
+					</div>
+					<div>
+						<h3>WHAT ADDITIONAL COSTS WILL I HAVE?</h3>
+						<p>{ current.additional_costs }</p>
+					</div>
 				</div>
 			);
 			
@@ -46,7 +68,7 @@ $.getJSON('../fees.json', function(data) {
 					{
 						data.map( (country, index) => 
 						<li key={country.country}>
-							<a href="#" key={country.country} id={country.country} value={index}>{country.display_name}</a>
+							<a href="#dropdown-menu" key={country.country} id={country.country} value={index}>{country.display_name}</a>
 						</li> 
 					)}
 				</ul>

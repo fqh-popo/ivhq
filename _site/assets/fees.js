@@ -8,26 +8,48 @@ $.getJSON('../fees.json', function(data) {
 		render: function() {
 			var current = this.props.list;
 			return (
-				React.createElement("div", {className: "col-md-4 text-left"}, 
-					React.createElement("h2", null, current.display_name), 
-					React.createElement("table", null, 
-						React.createElement("tbody", null, 
-						React.createElement("tr", null, 
-							React.createElement("th", null, "Duration"), 
-							React.createElement("th", null, "Cost")
+				React.createElement("div", {className: "col-md-12 text-left"}, 
+					React.createElement("div", {className: "row"}, 
+						React.createElement("div", {className: "flagBox col-md-1"}, 
+							React.createElement("img", {className: "flag", src: "../assets/images/"+current.display_name+".png"})
 						), 
-						
-							current.fees.map((fee, index) =>
-								React.createElement("tr", {key: current.country+"week-"+fee.weeks}, 
-									React.createElement("td", {key: current.country+"week-"+fee.weeks+"duration"}, fee.weeks, " ", (index == 0)? "week" : "weeks"), 
-									React.createElement("td", {key: current.country+"week-"+fee.weeks+"cost"}, fee.cost)
-								)
+						React.createElement("h2", {className: "col-md-11"}, current.display_name)
+					), 
+					React.createElement("div", {className: "row"}, 
+						React.createElement("div", {className: "col-md-2"}), 
+						React.createElement("table", {className: "table table-hover col-md-8"}, 
+							React.createElement("tbody", null, 
+							React.createElement("tr", {className: "info"}, 
+								React.createElement("th", null, "Duration"), 
+								React.createElement("th", null, "Cost")
+							), 
+							
+								current.fees.map((fee, index) =>
+									React.createElement("tr", {className: "success", key: current.country+"week-"+fee.weeks}, 
+										React.createElement("td", {key: current.country+"week-"+fee.weeks+"duration"}, fee.weeks, " ", (index == 0)? " week" : " weeks"), 
+										React.createElement("td", {key: current.country+"week-"+fee.weeks+"cost"}, fee.cost)
+									)
+								), 
+							
+							React.createElement("tr", {className: "info"}, 
+								React.createElement("td", {colSpan: "2"}, React.createElement("p", null, React.createElement("b", null, "Weekly Spending:"), "   $ ",  current.weekly_spending_money_estimate))
+							), 
+							React.createElement("tr", {className: "info"}, 
+								React.createElement("td", {colSpan: "2"}, React.createElement("p", null, React.createElement("b", null, "Please note:"), "  ",  current.extra_notes))
 							)
-						
-						)
-					), 					
-					React.createElement("div", null), 
-					React.createElement("div", null)
+							)
+						), 
+						React.createElement("div", {className: "col-md-2"})
+					), 
+					React.createElement("div", null, 
+						React.createElement("h3", null, "WHAT DO MY FEES PAY FOR?"), 
+						React.createElement("p", null, "Registration Fee (refundable if you choose not to go*) – ongoing support from IVHQ staff, program marketing costs, information pack, administration costs, IVHQ Fund, travel costs to inspect programs and communication costs with volunteers."), 
+						React.createElement("p", null, "Program Fee – airport pick-up, orientation, program supervision, accommodation and meals during volunteer program period, in-country 24/7 volunteer support and in-country administration costs.")
+					), 
+					React.createElement("div", null, 
+						React.createElement("h3", null, "WHAT ADDITIONAL COSTS WILL I HAVE?"), 
+						React.createElement("p", null,  current.additional_costs)
+					)
 				)
 			);
 			
@@ -46,7 +68,7 @@ $.getJSON('../fees.json', function(data) {
 					
 						data.map( (country, index) => 
 						React.createElement("li", {key: country.country}, 
-							React.createElement("a", {href: "#", key: country.country, id: country.country, value: index}, country.display_name)
+							React.createElement("a", {href: "#dropdown-menu", key: country.country, id: country.country, value: index}, country.display_name)
 						)
 					)
 				)
