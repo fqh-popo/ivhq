@@ -43,8 +43,8 @@ $.getJSON('../fees.json', function(data) {
 					), 
 					React.createElement("div", null, 
 						React.createElement("h3", null, "WHAT DO MY FEES PAY FOR?"), 
-						React.createElement("p", null, "Registration Fee (refundable if you choose not to go*) – ongoing support from IVHQ staff, program marketing costs, information pack, administration costs, IVHQ Fund, travel costs to inspect programs and communication costs with volunteers."), 
-						React.createElement("p", null, "Program Fee – airport pick-up, orientation, program supervision, accommodation and meals during volunteer program period, in-country 24/7 volunteer support and in-country administration costs.")
+						React.createElement("p", null, React.createElement("b", null, "Registration Fee"), " (refundable if you choose not to go*) – ongoing support from IVHQ staff, program marketing costs, information pack, administration costs, IVHQ Fund, travel costs to inspect programs and communication costs with volunteers."), 
+						React.createElement("p", null, React.createElement("b", null, "Program Fee"), " – airport pick-up, orientation, program supervision, accommodation and meals during volunteer program period, in-country 24/7 volunteer support and in-country administration costs.")
 					), 
 					React.createElement("div", null, 
 						React.createElement("h3", null, "WHAT ADDITIONAL COSTS WILL I HAVE?"), 

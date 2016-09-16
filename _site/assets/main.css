@@ -398,6 +398,11 @@ h1.arrow {
 header.navbar {
   margin-bottom: 0; }
 
+.ul-list {
+  list-style: none;
+  list-style-image: none;
+  padding-left: 0; }
+
 /* ==========================================================================
 FlexSlider Custom CSS
 ========================================================================== */
@@ -563,6 +568,13 @@ nav ul li a:hover, nav ul li a:focus {
 .bannerTxt {
   padding-top: 8em; }
 
+/*---about----------------------------*/
+.about p {
+  font-size: 15px; }
+
+.about {
+  min-height: 600px; }
+
 /*---fees-----------------------------*/
 #countryFee h2::after {
   content: " ";
@@ -583,10 +595,6 @@ nav ul li a:hover, nav ul li a:focus {
   margin-bottom: 30px; }
 
 /*---destinations --------------------*/
-.destinations ul {
-  list-style: none;
-  list-style-image: none; }
-
 h2.countryName {
   font-size: 15px;
   margin: 60px 0 90px 0; }
@@ -595,6 +603,7 @@ img.flag {
   width: 40px;
   border: 1px solid rgba(0, 0, 0, 0.2); }
 
+/*---projects ------------------------*/
 /*---testimonial ---------------------*/
 .testimonial #testimonialSlider img {
   width: 250px; }
@@ -639,3 +648,11 @@ ul.legals li:last-child::after {
 
 .credit {
   text-align: right; }
+
+@media screen and (max-width: 992px) {
+  .legals {
+    text-align: center;
+    padding-left: 0; }
+
+  .credit {
+    text-align: center; } }

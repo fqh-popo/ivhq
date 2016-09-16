@@ -2,8 +2,33 @@
 layout: default
 permalink: /projects/
 ---
+<section class="project text-center">
+  <div class="row topimgBox">
+    <img class="topimg" src="{{ site.url }}/assets/images/topimg-projects.jpg">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="arrow">Volunteer Abroad Projects</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="ul-list">
+          {% for proj in site.projects %}
+          <li>            
+            <h2 class="countryName col-md-4">
+              <a class="project-link" href="{{ proj.url | prepend: site.baseurl }}">{{ proj.title | escape }}</a>
+            </h2>
+          </li>
+          {% endfor %}
+        </ul>      
+      </div>
+    </div>
+  </div>
+</section>
 
-<div class="home">
+<!-- <div class="home">
 
   <h1 class="page-heading">Destinations</h1>
 
@@ -17,4 +42,4 @@ permalink: /projects/
     {% endfor %}
   </ul>
 
-</div>
+</div> -->

@@ -43,8 +43,8 @@ $.getJSON('../fees.json', function(data) {
 					</div>
 					<div>
 						<h3>WHAT DO MY FEES PAY FOR?</h3>
-						<p>Registration Fee (refundable if you choose not to go*) – ongoing support from IVHQ staff, program marketing costs, information pack, administration costs, IVHQ Fund, travel costs to inspect programs and communication costs with volunteers.</p>
-						<p>Program Fee – airport pick-up, orientation, program supervision, accommodation and meals during volunteer program period, in-country 24/7 volunteer support and in-country administration costs.</p>
+						<p><b>Registration Fee</b> (refundable if you choose not to go*) – ongoing support from IVHQ staff, program marketing costs, information pack, administration costs, IVHQ Fund, travel costs to inspect programs and communication costs with volunteers.</p>
+						<p><b>Program Fee</b> – airport pick-up, orientation, program supervision, accommodation and meals during volunteer program period, in-country 24/7 volunteer support and in-country administration costs.</p>
 					</div>
 					<div>
 						<h3>WHAT ADDITIONAL COSTS WILL I HAVE?</h3>
