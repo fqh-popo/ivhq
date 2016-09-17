@@ -404,13 +404,80 @@ header.navbar {
   padding-left: 0; }
 
 /* ==========================================================================
-FlexSlider Custom CSS
+JQuery-Slides CSS
 ========================================================================== */
-#servicesSlider {
-  margin-top: 70px; }
+#slides {
+  display: none;
+  position: relative; }
 
-ul.slides li {
-  margin-bottom: 20px; }
+#slides img {
+  z-index: -10; }
+
+#slides .slidesjs-navigation {
+  margin-top: 3px; }
+
+.slidesjs-pagination {
+  margin: 6px 45% 0;
+  padding-left: 0;
+  list-style: none;
+  width: 100%; }
+
+@media screen and (max-width: 992px) {
+  .slidesjs-pagination {
+    margin-left: 42%; } }
+@media screen and (max-width: 496px) {
+  .slidesjs-pagination {
+    margin-left: 40%; } }
+.slidesjs-pagination li {
+  float: left;
+  margin: 0 1px; }
+
+.slidesjs-pagination li a {
+  display: block;
+  width: 13px;
+  height: 0;
+  padding-top: 13px;
+  background-image: url("./images/pagination.png");
+  background-position: 0 0;
+  -webkit-transition: all 0s;
+  -moz-transition: all 0s;
+  -o-transition: all 0s;
+  transition: all 0s;
+  float: left;
+  overflow: hidden; }
+
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+  background-position: 0 -13px;
+  -webkit-transition: all 0s;
+  -moz-transition: all 0s;
+  -o-transition: all 0s;
+  transition: all 0s; }
+
+.slidesjs-pagination li a:hover {
+  background-position: 0 -26px;
+  -webkit-transition: all 0s;
+  -moz-transition: all 0s;
+  -o-transition: all 0s;
+  transition: all 0s; }
+
+a.slidesjs-previous {
+  position: absolute;
+  top: 45%;
+  left: 2px;
+  background-image: url("./images/arrow_left.png");
+  width: 26px;
+  height: 38px;
+  z-index: 10; }
+
+a.slidesjs-next {
+  position: absolute;
+  top: 45%;
+  right: 2px;
+  background-image: url("./images/arrow_right.png");
+  width: 26px;
+  height: 38px;
+  z-index: 10; }
 
 /* ==========================================================================
 Navigation
@@ -620,6 +687,22 @@ img.flag {
   width: 40px;
   border: 1px solid rgba(0, 0, 0, 0.2); }
 
+.panel-body .glance {
+  font-size: 20px;
+  font-style: italic;
+  line-height: 200%; }
+
+.glance ul li {
+  background: url("./images/checker.png") no-repeat left center;
+  list-style: none;
+  padding-left: 22px;
+  margin-top: 10px; }
+
+.glance-right img {
+  width: 200px;
+  border-radius: 100px;
+  border: 1px solid #d9edf7; }
+
 /*---Collapse------------------------ */
 .panel-group .panel {
   -webkit-border-radius: 0px;
@@ -680,6 +763,18 @@ img.flag {
   font-size: 20px; }
 
 /*---projects ------------------------*/
+.project header {
+  margin-top: 50px; }
+
+article.project h2 {
+  font-size: 15px; }
+
+article.project h2::after {
+  margin: 25px 0; }
+
+article.project {
+  margin-bottom: 50px; }
+
 /*---testimonial ---------------------*/
 .testimonial #testimonialSlider img {
   width: 250px; }

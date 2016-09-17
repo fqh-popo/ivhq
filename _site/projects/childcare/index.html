@@ -12,6 +12,10 @@
   
   
 
+  <script type="text/javascript" src="/assets/vendor/jquery-3.1.0.min.js"></script>
+  <script type="text/javascript" src="/assets/vendor/jquery.slides.min.js"></script>
+  <script type="text/javascript" src="/assets/vendor/bootstrap.min.js"></script>
+
   <!--Bootstrap-->
   <link type="text/css" rel="stylesheet" href="/assets/bootstrap.min.css">
 
@@ -32,9 +36,7 @@
     }
   </style>
 
-  <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
-  <script type="text/javascript" src="/assets/vendor/jquery.slides.min.js"></script>
-  <script type="text/javascript" src="/assets/vendor/bootstrap.min.js"></script>
+
 
   <!-- Web Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -47,7 +49,17 @@
     $(function(){
       $("#slides").slidesjs({
         width: 940,
-        height: 528
+        height: 528,
+        navigation: {
+          active: true,
+            // [boolean] Generates next and previous buttons.
+            // You can set to false and use your own buttons.
+            // User defined buttons must have the following:
+            // previous button: class="slidesjs-previous slidesjs-navigation"
+            // next button: class="slidesjs-next slidesjs-navigation"
+          effect: "slide"
+            // [string] Can be either "slide" or "fade".
+        }
       });
     });
   </script>
@@ -106,13 +118,13 @@
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <article class="project">
+  <div class="container">
+    <header class="project-header text-center">
+      <h1 class="arrow project-title">Childcare</h1>
+    </header>
 
-  <header class="project-header">
-    <h1 class="project-title">Childcare</h1>
-  </header>
-
-  <div class="project-content">
-    <p>Are you passionate about making sure that children have access to essential care and support, and do you want to volunteer your time helping local people and organizations within communities abroad to promote better health, education and development outcomes for young people?</p>
+    <div class="project-content">
+      <p>Are you passionate about making sure that children have access to essential care and support, and do you want to volunteer your time helping local people and organizations within communities abroad to promote better health, education and development outcomes for young people?</p>
 
 <p>Our Childcare volunteers provide assistance in a range of environments – community centers, day care centers, orphanages, after school programs, and feeding programs. Volunteer work is led by local staff and tasks vary depending on the specific placement, but generally involve providing personalized attention, mentoring, educational support, or playing games and assisting with daily operations, such as cooking and cleaning.</p>
 
@@ -120,29 +132,29 @@
 
 <p>Learn more about our childcare volunteer opportunities available in the destinations below.</p>
 
-  </div>
+    </div>
 
-  <h2>Availability</h2>
-  <p>Childcare projects are available in the following destinations:</p>
-  <div class="destination-list">
-    
-    <a href="/destinations/volunteer-in-argentina">Argentina</a>
-    
-    <a href="/destinations/volunteer-in-thailand">Thailand</a>
-    
-  </div>
+    <h2>Availability</h2>
+    <p>Childcare projects are available in the following destinations:</p>
+    <div class="destination-list">
+      
+      <a href="/destinations/volunteer-in-argentina">Argentina</a>
+      
+      <a href="/destinations/volunteer-in-thailand">Thailand</a>
+      
+    </div>
 
-  <h2>Projects</h2>
-  <div class="projects">
-    
-    <div class="project childcare"><a href="/projects/childcare/">Childcare</a></div>
-    
-    <div class="project elderly_care"><a href="/projects/elderly_care/">Elderly Care</a></div>
-    
-    <div class="project teaching"><a href="/projects/teaching/">Teaching</a></div>
-    
+    <h2>Projects</h2>
+    <div class="projects">
+      
+      <div class="project childcare"><a href="/projects/childcare/">Childcare</a></div>
+      
+      <div class="project elderly_care"><a href="/projects/elderly_care/">Elderly Care</a></div>
+      
+      <div class="project teaching"><a href="/projects/teaching/">Teaching</a></div>
+      
+    </div>
   </div>
-
 </article>
 
       </div>
