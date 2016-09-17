@@ -518,9 +518,6 @@ nav ul li a:hover, nav ul li a:focus {
   border-radius: 0; }
 
 /*---Banner --------------------------*/
-.post-header h1 {
-  display: none; }
-
 .videobox {
   position: absolute;
   top: 0;
@@ -575,6 +572,26 @@ nav ul li a:hover, nav ul li a:focus {
 .about {
   min-height: 600px; }
 
+/*---blog-----------------------------*/
+.blog .ul-list h2::after, .md-content h2::after {
+  content: " ";
+  border: solid 2px #3dc9b3;
+  display: block;
+  width: 35px;
+  margin: 25px 0; }
+
+.md-content h2 {
+  font-size: 20px; }
+
+.md-content {
+  margin-bottom: 60px; }
+
+.blog a.post-link {
+  font-size: 20px; }
+
+.blog-post header {
+  margin-top: 80px; }
+
 /*---fees-----------------------------*/
 #countryFee h2::after {
   content: " ";
@@ -603,8 +620,7 @@ img.flag {
   width: 40px;
   border: 1px solid rgba(0, 0, 0, 0.2); }
 
-/* Collapse
----------------------------------- */
+/*---Collapse------------------------ */
 .panel-group .panel {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;

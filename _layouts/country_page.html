@@ -3,14 +3,18 @@ layout: default
 ---
 {% javascript vendor/destinations %}
 <section>
+	<div class="row topimgBox">
+		<img class="topimg" src="{{ site.url }}/assets/images/destinations-{{page.country_name}}.jpg">
+	</div>
+  
 	<div class="container">
 		<article class="country">
-			
-			<header class="country-header">
-				<h1 class="country-title">{{ page.title | escape }}</h1>
+
+			<header class="country-header text-center">
+				<h1 class="arrow">{{ page.title | escape }}</h1>
 			</header>
 
-			<div class="col-md-12 country-content">
+			<div class="col-md-12 md-content">
 				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 					{{ content }}
 				</div>

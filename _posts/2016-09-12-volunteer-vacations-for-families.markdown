@@ -100,4 +100,4 @@ We trust this information will provide you with the information and inspiration 
 
 
 
-<center><a class="apply-button" href="/apply-online">Apply Now</a></center>
+<center><a class="apply-button" href="https://www.volunteerhq.org/apply-online"><button type="button" class="btn btn-success">Apply Now</button></a></center>

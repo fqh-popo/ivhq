@@ -12,9 +12,9 @@ $(document).ready(function () {
 		$("#accordion").append(
 			'<div class="panel panel-default">' +
 				'<div class="panel-heading" role="tab" id="'+newId+'">' +
-					'<h4 class="panel-title">' +
+					'<h3 class="panel-title">' +
 						'<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse'+i+'" aria-expanded="false" aria-controls="collapse'+i+'"></a>' +
-					'</h4>' +
+					'</h3>' +
 				'</div>' +
 				'<div id="collapse'+i+'" class="panel-collapse collapse" role="tabpanel" aria-labelledby="'+newId+'">' +
 					'<div class="panel-body"></div>' +
