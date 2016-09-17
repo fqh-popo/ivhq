@@ -1,14 +1,22 @@
 ---
 layout: default
 ---
-<article class="country">
+{% javascript vendor/destinations %}
+<section>
+	<div class="container">
+		<article class="country">
+			
+			<header class="country-header">
+				<h1 class="country-title">{{ page.title | escape }}</h1>
+			</header>
 
-  <header class="country-header">
-    <h1 class="country-title">{{ page.title | escape }}</h1>
-  </header>
+			<div class="col-md-12 country-content">
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+					{{ content }}
+				</div>
+			</div>
 
-  <div class="country-content">
-    {{ content }}
-  </div>
+		</article>		
+	</div>
+</section>
 
-</article>
