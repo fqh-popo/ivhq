@@ -215,7 +215,7 @@ header.navbar {
 JQuery-Slides CSS
 ========================================================================== */
 #slides {
-  display: none;
+  display: none; /* Prevents slides from flashing */
   position: relative;
 }
 
@@ -226,12 +226,6 @@ JQuery-Slides CSS
 #slides .slidesjs-navigation {
   margin-top:3px;
 }
-
-// #slides .slidesjs-previous {
-//   margin-right: 5px;
-//   float: left;
-// }
-
 
 .slidesjs-pagination {
   margin: 6px 45% 0;

@@ -408,6 +408,7 @@ JQuery-Slides CSS
 ========================================================================== */
 #slides {
   display: none;
+  /* Prevents slides from flashing */
   position: relative; }
 
 #slides img {

@@ -1,4 +1,8 @@
 
+/*
+ * Modify the style of country_page.html
+ */
+
 $(document).ready(function () {
 	
 	// Locate all the content titles
@@ -46,13 +50,13 @@ $(document).ready(function () {
 		$("#collapse0 ul").appendTo("#collapse0 .glance");
 		$("#collapse0 p").appendTo("#collapse0 .glance-right");
 
-		//Spread the "At a glance" panel
+		//Spread the "At a glance" panel as default
 		$("#collapse0").attr("class", "panel-collapse collapse in");
 		$("#heading0 a").attr({"aria-expanded": "true", "class": ""});
 	}
 
 
-	//remove the default "previous" and "next", instead of img defined in main.css
+	//remove the default "previous" and "next", instead of background img defined in main.css
 	$("a.slidesjs-previous").html("");
 	$("a.slidesjs-next").html("");
 
