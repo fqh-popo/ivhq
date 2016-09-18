@@ -3,6 +3,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!--Open Graph Data -->
+  <meta property="fb:pages" content="136014809750770">
+  <meta property="og:site_name" content="{{ site.site-name }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.volunteerhq.org/">
+  <meta property="og:title" content="Volunteer Abroad with IVHQ">
+  <meta property="og:description" content="{{ site.description | escape }}">
+  <meta property="og:image" content="http://www.volunteerhq.org/sites/default/files/facebook-open-graph-image-global.jpg">
+  <!--================-->
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Volunteer Abroad with IVHQ">
+  <meta name="twitter:description" content="{{ site.description | escape }}">
+  <meta name="twitter:url" content="https://www.volunteerhq.org/">
+  <meta name="twitter:image" content="http://www.volunteerhq.org/sites/default/files/facebook-open-graph-image-global.jpg">
+  <!--==============-->
+
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 

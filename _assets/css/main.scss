@@ -409,7 +409,17 @@ nav ul li a:hover, nav ul li a:focus { text-decoration: none; color: rgba(255, 2
 .blog-post header {
 	margin-top: 80px;
 }
-
+.blog ul .text-left img {
+	border: 5px solid #ddd;
+    border-radius: 25px;
+}
+.blog ul .text-left img:hover {
+	border-color: #9ddcd2;
+	cursor: pointer;
+}
+.blog ul .text-left {
+	margin-bottom: 20px;
+}
 /*---fees-----------------------------*/
 #countryFee h2::after { content: " "; border: solid 2px #3dc9b3; display: block; width: 35px; margin: 25px 0; }
 #countryFee .flagBox {
@@ -517,7 +527,8 @@ img.flag {
 }
 /*---projects ------------------------*/
 .project header {
-	margin-top: 50px;
+	margin-top: 80px;
+	margin-bottom: 50px;
 }
 article.project h2 {
 	font-size: 15px;

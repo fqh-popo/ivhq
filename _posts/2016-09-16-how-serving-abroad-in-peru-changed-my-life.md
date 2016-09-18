@@ -1,17 +1,16 @@
 ---
-excerpt: Discover the top destinations for family volunteer vacations and why family
-  volunteering will be an ideal option for your next vacation...
+excerpt: I think that goes to say that there are several elements that you learn about yourself when you not only go abroad but when you serve abroad...
 layout: post
-title: Volunteer Vacations For Families
-post_image_alt: Volunteer with your Family with IVHQ
-post_image_uri: images/blog/volunteer-vacations-family-header-0.jpg
-permalink: "/blog/volunteer-vacations-for-families/"
+title: How Serving Abroad in Peru Changed My Life
+post_image_alt: How Serving Abroad in Peru Changed My Life
+post_image_uri: ../assets/images/blog/how-serving-abroad-in-peru-changed-my-life.jpg
+permalink: "/blog/how-serving-abroad-in-peru-changed-my-life/"
 ---
-![IVHQ Volunteer Vacations for Families](http://placehold.it/350x150)
+![How Serving Abroad in Peru Changed My Life](../../assets/images/blog/how-serving-abroad-in-peru-changed-my-life-0.jpg)
 
-Are you interested in learning more about volunteer vacations for families, and want to know which programs are best suited to your family? You're in the right place! While spending your family vacation volunteering abroad may not be the first thing that springs to mind when planning a trip, we strongly encourage families to consider the opportunity of volunteering overseas together. Family volunteer vacations expand global awareness and appreciation for different cultures, while teaching you and your children valuable life skills, including how to travel responsibly and work effectively as a team.
+I reached a point in my life where I'd say if you judged me from the outside, you'd say I'm a success story. I received a great education, earned a good paying job, could provide for my family, took vacations often and after 7 years of driving, could successfully parallel park without hitting anything (or anybody for that matter...thank you back-up cameras). I was living comfortably and had always been passionate about giving back to my community, but I always had a desire deep in my heart to do more and to be more than just a doer; I wanted to be a giver.
 
-Forget expensive resorts and over-priced tours, [volunteering abroad as a family is highly affordable](/family-volunteering) and will bring you closer together. You will be uniting to have a positive impact on a community abroad and creating lifelong memories as a family - just imagine helping to rebuilding a school together in Argentina, or traveling to Bali to experience the vibrant culture while contributing to meaningful community-driven projects. There is no doubt volunteering abroad will be something you will cherish forever and immediately make you the coolest parents around!
+So, I did research. And I fell upon IVHQ. IVHQ had the most affordable volunteer programs and based on reviews, was deemed safe, reliable, and trustworthy. Their placement programs allowed me the flexibility of volunteering somewhere for as little as one week at a time. I was immediately drawn as I am a strong believer that my success is that much greater when those around me can succeed as well.
 
 ![Take a family volunteer vacation with IVHQ](/images/blog/update-volunteer-programs-for-teens/volunteer-programs-for-families-video-tour-uganda.jpg)
 

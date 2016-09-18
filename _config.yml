@@ -16,9 +16,13 @@
 title: IVHQ Interview
 email: robin@volunteerhq.org
 description: |-
-  A small, unstyled HTML site. Make it better!
+  IVHQ provides affordable, safe and responsible volunteer abroad programs. Discover why we're the world's most trusted volunteer travel company...
 url: "" # the base hostname & protocol for your site
 twitter_username: ivqh
+
+# Ivy settings
+foot-description: International Volunteer Headquarters
+site-name: International Volunteer HQ
 
 # Build settings
 markdown: kramdown
