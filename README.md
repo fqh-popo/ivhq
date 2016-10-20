@@ -8,12 +8,6 @@ Although familiarity with Ruby will be helpful in understanding Jekyll, it is no
 
 ## Getting Started
 
-### Repository
-
-Before you make any changes, create a *private* repository under your own Github or BitBucket account. Unzip this project, commit and push it as-is to the new repo.
-
-When you are ready for us to look at your work, invite me (Robin Stark) as a collaborator. My Github and BitBucket account names are both `robinstark`.
-
 ### Dependencies
 
 Ensure you have a recent version of [Ruby](https://www.ruby-lang.org/en/) installed. At least 1.9.3, but the latest version is best.
@@ -81,8 +75,3 @@ We would like to see your working and thought process - please create commits as
 ### Constraints
 We'd prefer if you did not change the structure of the various markdown (`.md`) files in the site - particularly the ones in `_projects`, `_posts` and `_destinations`. They represent content that the Marketing department will edit, and so should not be too complex.
 
-### Questions
-If anything is unclear, please feel free to ask for clarification (by [email](mailto:robin@volunteerhq.org)), or just clearly list the assumptions you have made.
-
-### Intellectual property
-The work you do on this project remains your property, and we will use it only to evaluate your suitability for this role. If you use any assets from our website, they remain our property. If you are employed by us, by mutual agreement we may choose to incorporate some or all of this work into our products.
